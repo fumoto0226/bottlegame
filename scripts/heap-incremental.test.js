@@ -1,5 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
+import { assertGeometryClose } from "./lib/assert-geometry.js";
 import { levels } from "../src/levels.js";
 import { dailyForDate } from "../src/daily.js";
 import { heapOf, settlePile, coverage, heapCamera } from "../src/pile.js";
@@ -20,8 +21,8 @@ function same(level, pile) {
   assert.deepEqual([...a.poses.keys()], [...b.poses.keys()]);
   for (const [id, p] of b.poses) {
     const q = a.poses.get(id);
-    assert.deepEqual(q.anchor.toArray(), p.anchor.toArray(), `anchor ${id}`);
-    assert.deepEqual(q.quat.toArray(), p.quat.toArray(), `quat ${id}`);
+    assertGeometryClose(q.anchor.toArray(), p.anchor.toArray(), `anchor ${id}`);
+    assertGeometryClose(q.quat.toArray(), p.quat.toArray(), `quat ${id}`);
     assert.equal(q.order, p.order, `order ${id}`);
     assert.equal(a.cover.get(id), b.cover.get(id), `cover ${id}`);
     assert.deepEqual(a.coveredBy.get(id), b.by.get(id), `coveredBy ${id}`);

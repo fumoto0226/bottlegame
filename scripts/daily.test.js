@@ -2,6 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import {createHash} from 'node:crypto';
+import {assertGeometryClose,assertPreparedHeapClose} from './lib/assert-geometry.js';
 import {dailyForDate,dailyDate} from '../src/daily.js';
 import {initial} from '../src/rules.js';
 import {replay,progression,layers} from './lib/level-metrics.js';
@@ -49,12 +50,12 @@ test('cached settling agrees with uncached geometry after removing a bottle',()=
  pile=pile.filter(id=>id!==certificate.path.find(m=>m.type==='pick').id);
  const actual=heapOf(level,pile);
  const expected=settlePile(level.bottles.filter(b=>pile.includes(b.id)).map(b=>({id:b.id,order:b.order,...b.heap})));
- for(const [id,pose] of expected){assert.deepEqual(actual.poses.get(id).anchor.toArray(),pose.anchor.toArray());assert.deepEqual(actual.poses.get(id).quat.toArray(),pose.quat.toArray());}
+ for(const [id,pose] of expected){assertGeometryClose(actual.poses.get(id).anchor.toArray(),pose.anchor.toArray());assertGeometryClose(actual.poses.get(id).quat.toArray(),pose.quat.toArray());}
 });
 
 test('prepared starting heap exactly matches live physics and is shared across daily colours',()=>{
  const raw={...level,preparedHeap:null,geometrySource:undefined};
- assert.deepEqual(prepareHeap(raw),data.preparedHeap);
+ assertPreparedHeapClose(prepareHeap(raw),data.preparedHeap);
  const pile=initial(level).pile;
  assert.strictEqual(heapOf(level,pile),heapOf(dailyForDate('2026-10-27'),pile));
 });
@@ -94,8 +95,21 @@ test('second challenge is independently certified and raises mixed-bottle diffic
  assert.ok(b.reduce((n,r)=>n+r.twoColor,0)<=33);
  assert.ok(b[0].meanColors<b[1].meanColors&&b[1].meanColors<b[2].meanColors);
  for(const wave of cert2.peelWaves)if(wave.ids.length>=2)assert.ok(new Set(wave.kinds).size>1);
- assert.deepEqual(prepareHeap({...second,preparedHeap:null,geometrySource:undefined}),data2.preparedHeap);
+ assertPreparedHeapClose(prepareHeap({...second,preparedHeap:null,geometrySource:undefined}),data2.preparedHeap);
  replay(second,cert2.path);
  assert.deepEqual(dailyForDate('2026-10-26',1),second);
  assert.throws(()=>dailyForDate('2026-10-26',2));
+});
+
+
+test('geometry tolerance still rejects moved bottles and changed pickability',()=>{
+ const same=structuredClone(data.preparedHeap);
+ same.poses[0][1].anchor[0]+=Number.EPSILON;
+ assertPreparedHeapClose(same,data.preparedHeap);
+ const moved=structuredClone(data.preparedHeap);
+ moved.poses[0][1].anchor[0]+=.00001;
+ assert.throws(()=>assertPreparedHeapClose(moved,data.preparedHeap));
+ const blocked=structuredClone(data.preparedHeap);
+ blocked.free.pop();
+ assert.throws(()=>assertPreparedHeapClose(blocked,data.preparedHeap));
 });

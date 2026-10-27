@@ -207,3 +207,4 @@ Original prompt: 开发手机竖屏层叠拾取 + Water Sort 纯前端游戏，4
 - 添加 .github/workflows/pages.yml：main 推送或手动触发后 npm ci → npm test → npm run build，上传 dist 成品，再用官方 Pages Action 发布。保留单文件相对路径构建，兼容 /bottlegame/ 与本地离线。
 - README 增加准确网址、GitHub Actions 来源配置、发布流程与白屏原因。需将仓库 Pages 来源切换为 workflow，由 Actions 负责发布。
 - 本地42项测试、构建和diff空白检查通过；发布后需再用线上HTTP与真实浏览器检查渲染、拾取及挑战选关。
+- 首次 Linux CI 暴露跨平台浮点末位差异：Mac 预计算与 Linux 实算的 quaternion/axis/caps 差约1e-16，4项几何快照精确相等测试失败。仅测试中的连续几何字段改为1e-12相对/绝对量级容差，瓶子ID/顺序、free、cover、coveredBy仍严格相等，关卡指纹/完整解法验证不变；增加会拒绝真实位置变化和可拾集合变化的反例检查。游戏运行时代码和数据无需修改。
