@@ -26,6 +26,17 @@ npm run preview  # 通过本地 HTTP 检查构建结果
 
 将 `dist/index.html` 上传普通静态网页托管即可；也可离线双击打开。Node 仅用于开发与打包。
 
+## GitHub Pages 发布
+
+游戏网址：https://fumoto0226.github.io/bottlegame/
+
+仓库 **Settings → Pages → Build and deployment → Source** 选择 **GitHub Actions**。
+不要直接选择 `main / (root)`：根目录的 `index.html` 是 Vite 开发入口，Pages 不会自动执行 npm 构建，直接发布会白屏。
+
+`.github/workflows/pages.yml` 会在每次推送到 `main` 后安装依赖、运行测试、构建，再发布 **`dist/`**。也可以在 Actions 中打开 **Deploy game to GitHub Pages**，点击 **Run workflow** 手动发布。等待部署成功后访问上方网址。
+
+`vite.config.js` 使用相对路径 `base: "./"`，且构建输出为完整内嵌脚本和样式的单文件，兼容 `/bottlegame/` 项目路径及离线双击。
+
 ## 玩法
 
 点击没有被遮挡的瓶子进入工作台，最多同时容纳五瓶。先选有水的源瓶，再选空瓶或顶部同色且有空间的目标瓶。自动转移顶部连续同色液体，容量为四单位。满四格单色瓶自动消除，空瓶保留作周转。工作台满且没有任何合法倒水操作才失败。

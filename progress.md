@@ -201,3 +201,9 @@ Original prompt: 开发手机竖屏层叠拾取 + Water Sort 纯前端游戏，4
 - 前中后平均色数2.70/3.05/3.35，双色19/8/6、四色7/10/20；表层仍有近半数双色瓶，下段保留6双色缓冲，各真实暴露波次有复杂度差异。
 - 新版554步认证路径已逐步重放合法；第一关仍为原538步数据。npm test42项与verify原六关/两挑战通过，构建841.61KB（gzip245.70KB）。新版完整浏览器实点通关进行中。
 - 新版第二关554步真实DOM点击通关、整理进度120/120；重开、再玩一次、选关返回、第一关衔接与320×568小屏通过，控制台错误为空。已查看技能初始截图、关卡中途/胜利截图与文本状态，离线file-test通过。本轮完成。
+
+## 第二十六轮：GitHub Pages 白屏修复（2026-10-27）
+- 线上仓库 fumoto0226/bottlegame 的 Pages 使用 legacy main 根目录，发布的是 Vite 开发 index；实际请求 /src/main.js 返回404。Pages 显示 built 不代表游戏完成打包。
+- 添加 .github/workflows/pages.yml：main 推送或手动触发后 npm ci → npm test → npm run build，上传 dist 成品，再用官方 Pages Action 发布。保留单文件相对路径构建，兼容 /bottlegame/ 与本地离线。
+- README 增加准确网址、GitHub Actions 来源配置、发布流程与白屏原因。需将仓库 Pages 来源切换为 workflow，由 Actions 负责发布。
+- 本地42项测试、构建和diff空白检查通过；发布后需再用线上HTTP与真实浏览器检查渲染、拾取及挑战选关。
