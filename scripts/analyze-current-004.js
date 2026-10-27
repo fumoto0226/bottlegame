@@ -1,0 +1,2 @@
+import fs from'node:fs';import{levels}from'../src/levels.js';import{opening,sampleOrders,progression}from'./lib/level-metrics.js';
+const l=levels[3],t=performance.now(),samples=sampleOrders(l,{samples:24,limit:8000,maxDepth:400});const report={level:4,version:'progressive-v1',opening:opening(l),progression:progression(l),orderSampling:samples,elapsedMs:performance.now()-t};fs.writeFileSync('docs/004-current-analysis.json',JSON.stringify(report,null,2));console.log(JSON.stringify({...samples,witnesses:undefined,elapsedMs:report.elapsedMs}));

@@ -1,0 +1,453 @@
+{
+  "method": {
+    "opening": "Exact legal next-three-pick sequences with no intervening pours; survival means not immediately lost, not necessarily solvable.",
+    "probability": "Uniform choice among currently visible/pickable bottles at each pick.",
+    "orders": "Different complete pickup-id orders found by seeded searches; lower bounds only. No path is declared unsolvable when the search budget runs out.",
+    "progression": "Remove all currently exposed bottles wave by wave; split that exposure order into thirds. Geometry is re-settled at every wave."
+  },
+  "levels": [
+    {
+      "level": 3,
+      "heapBottles": 30,
+      "emptyHelpers": 2,
+      "colors": 5,
+      "contentHistogram": {
+        "2": 12,
+        "3": 16,
+        "4": 2
+      },
+      "solutionSteps": 126,
+      "searchNodes": 494,
+      "opening": {
+        "depth": 3,
+        "paths": 632,
+        "safePaths": 552,
+        "safePathFraction": 0.8734177215189873,
+        "uniformChoiceSurvival": 0.8673361258083478,
+        "firstChoices": [
+          {
+            "id": 7,
+            "paths": 61,
+            "safe": 53
+          },
+          {
+            "id": 12,
+            "paths": 62,
+            "safe": 54
+          },
+          {
+            "id": 17,
+            "paths": 77,
+            "safe": 69
+          },
+          {
+            "id": 20,
+            "paths": 63,
+            "safe": 49
+          },
+          {
+            "id": 22,
+            "paths": 76,
+            "safe": 65
+          },
+          {
+            "id": 23,
+            "paths": 62,
+            "safe": 51
+          },
+          {
+            "id": 26,
+            "paths": 76,
+            "safe": 68
+          },
+          {
+            "id": 27,
+            "paths": 93,
+            "safe": 87
+          },
+          {
+            "id": 29,
+            "paths": 62,
+            "safe": 56
+          }
+        ]
+      },
+      "progression": {
+        "peelWaves": 7,
+        "bands": [
+          {
+            "band": "upper",
+            "bottles": 10,
+            "meanColors": 2.2,
+            "meanRuns": 2.8,
+            "twoColor": 9,
+            "fourColor": 1
+          },
+          {
+            "band": "middle",
+            "bottles": 10,
+            "meanColors": 2.8,
+            "meanRuns": 3.2,
+            "twoColor": 2,
+            "fourColor": 0
+          },
+          {
+            "band": "lower",
+            "bottles": 10,
+            "meanColors": 3,
+            "meanRuns": 3.8,
+            "twoColor": 1,
+            "fourColor": 1
+          }
+        ]
+      },
+      "dataSha256": "7ff0d0e29e9db79704b90ec979322b50897fe7394ec47393d872b9d28c121dd7"
+    },
+    {
+      "level": 4,
+      "heapBottles": 40,
+      "emptyHelpers": 2,
+      "colors": 6,
+      "contentHistogram": {
+        "2": 12,
+        "3": 19,
+        "4": 9
+      },
+      "solutionSteps": 178,
+      "searchNodes": 432,
+      "opening": {
+        "depth": 3,
+        "paths": 495,
+        "safePaths": 437,
+        "safePathFraction": 0.8828282828282829,
+        "uniformChoiceSurvival": 0.885136226207658,
+        "firstChoices": [
+          {
+            "id": 17,
+            "paths": 62,
+            "safe": 53
+          },
+          {
+            "id": 21,
+            "paths": 62,
+            "safe": 55
+          },
+          {
+            "id": 30,
+            "paths": 50,
+            "safe": 42
+          },
+          {
+            "id": 35,
+            "paths": 50,
+            "safe": 40
+          },
+          {
+            "id": 36,
+            "paths": 81,
+            "safe": 62
+          },
+          {
+            "id": 37,
+            "paths": 77,
+            "safe": 74
+          },
+          {
+            "id": 38,
+            "paths": 49,
+            "safe": 48
+          },
+          {
+            "id": 39,
+            "paths": 64,
+            "safe": 63
+          }
+        ]
+      },
+      "progression": {
+        "peelWaves": 9,
+        "bands": [
+          {
+            "band": "upper",
+            "bottles": 13,
+            "meanColors": 2.3846153846153846,
+            "meanRuns": 2.769230769230769,
+            "twoColor": 10,
+            "fourColor": 2
+          },
+          {
+            "band": "middle",
+            "bottles": 13,
+            "meanColors": 3,
+            "meanRuns": 3.4615384615384617,
+            "twoColor": 0,
+            "fourColor": 0
+          },
+          {
+            "band": "lower",
+            "bottles": 14,
+            "meanColors": 3.357142857142857,
+            "meanRuns": 3.857142857142857,
+            "twoColor": 2,
+            "fourColor": 7
+          }
+        ]
+      },
+      "dataSha256": "7e5b85d501784d6332fa324b77b77c76f288f3a2164b2fee8a82dd8335429e94"
+    },
+    {
+      "level": 5,
+      "heapBottles": 50,
+      "emptyHelpers": 2,
+      "colors": 6,
+      "contentHistogram": {
+        "2": 25,
+        "3": 20,
+        "4": 5
+      },
+      "solutionSteps": 208,
+      "searchNodes": 9785,
+      "opening": {
+        "depth": 3,
+        "paths": 2907,
+        "safePaths": 2844,
+        "safePathFraction": 0.978328173374613,
+        "uniformChoiceSurvival": 0.9803597883597761,
+        "firstChoices": [
+          {
+            "id": 5,
+            "paths": 186,
+            "safe": 185
+          },
+          {
+            "id": 8,
+            "paths": 186,
+            "safe": 184
+          },
+          {
+            "id": 12,
+            "paths": 186,
+            "safe": 186
+          },
+          {
+            "id": 17,
+            "paths": 213,
+            "safe": 202
+          },
+          {
+            "id": 25,
+            "paths": 161,
+            "safe": 161
+          },
+          {
+            "id": 33,
+            "paths": 214,
+            "safe": 202
+          },
+          {
+            "id": 39,
+            "paths": 186,
+            "safe": 184
+          },
+          {
+            "id": 40,
+            "paths": 186,
+            "safe": 185
+          },
+          {
+            "id": 41,
+            "paths": 187,
+            "safe": 185
+          },
+          {
+            "id": 44,
+            "paths": 213,
+            "safe": 207
+          },
+          {
+            "id": 45,
+            "paths": 187,
+            "safe": 185
+          },
+          {
+            "id": 46,
+            "paths": 216,
+            "safe": 214
+          },
+          {
+            "id": 47,
+            "paths": 186,
+            "safe": 184
+          },
+          {
+            "id": 48,
+            "paths": 214,
+            "safe": 196
+          },
+          {
+            "id": 49,
+            "paths": 186,
+            "safe": 184
+          }
+        ]
+      },
+      "progression": {
+        "peelWaves": 9,
+        "bands": [
+          {
+            "band": "upper",
+            "bottles": 16,
+            "meanColors": 2.125,
+            "meanRuns": 2.375,
+            "twoColor": 15,
+            "fourColor": 1
+          },
+          {
+            "band": "middle",
+            "bottles": 17,
+            "meanColors": 2.5294117647058822,
+            "meanRuns": 3.235294117647059,
+            "twoColor": 9,
+            "fourColor": 1
+          },
+          {
+            "band": "lower",
+            "bottles": 17,
+            "meanColors": 3.1176470588235294,
+            "meanRuns": 3.7058823529411766,
+            "twoColor": 1,
+            "fourColor": 3
+          }
+        ]
+      },
+      "dataSha256": "dc8c51da686856bc822a21ffce05c90e766e0f9d5519d4eb96f51056e82d74a8"
+    },
+    {
+      "level": 6,
+      "heapBottles": 50,
+      "emptyHelpers": 2,
+      "colors": 6,
+      "contentHistogram": {
+        "2": 25,
+        "3": 20,
+        "4": 5
+      },
+      "solutionSteps": 203,
+      "searchNodes": 6073,
+      "opening": {
+        "depth": 3,
+        "paths": 2907,
+        "safePaths": 2269,
+        "safePathFraction": 0.7805297557619539,
+        "uniformChoiceSurvival": 0.7775889340614601,
+        "firstChoices": [
+          {
+            "id": 5,
+            "paths": 186,
+            "safe": 126
+          },
+          {
+            "id": 8,
+            "paths": 186,
+            "safe": 140
+          },
+          {
+            "id": 12,
+            "paths": 186,
+            "safe": 134
+          },
+          {
+            "id": 17,
+            "paths": 213,
+            "safe": 190
+          },
+          {
+            "id": 25,
+            "paths": 161,
+            "safe": 122
+          },
+          {
+            "id": 33,
+            "paths": 214,
+            "safe": 169
+          },
+          {
+            "id": 39,
+            "paths": 186,
+            "safe": 143
+          },
+          {
+            "id": 40,
+            "paths": 186,
+            "safe": 143
+          },
+          {
+            "id": 41,
+            "paths": 187,
+            "safe": 153
+          },
+          {
+            "id": 44,
+            "paths": 213,
+            "safe": 167
+          },
+          {
+            "id": 45,
+            "paths": 187,
+            "safe": 151
+          },
+          {
+            "id": 46,
+            "paths": 216,
+            "safe": 192
+          },
+          {
+            "id": 47,
+            "paths": 186,
+            "safe": 146
+          },
+          {
+            "id": 48,
+            "paths": 214,
+            "safe": 150
+          },
+          {
+            "id": 49,
+            "paths": 186,
+            "safe": 143
+          }
+        ]
+      },
+      "progression": {
+        "peelWaves": 9,
+        "bands": [
+          {
+            "band": "upper",
+            "bottles": 16,
+            "meanColors": 2.125,
+            "meanRuns": 2.375,
+            "twoColor": 15,
+            "fourColor": 1
+          },
+          {
+            "band": "middle",
+            "bottles": 17,
+            "meanColors": 2.5294117647058822,
+            "meanRuns": 3.235294117647059,
+            "twoColor": 9,
+            "fourColor": 1
+          },
+          {
+            "band": "lower",
+            "bottles": 17,
+            "meanColors": 3.1176470588235294,
+            "meanRuns": 3.7058823529411766,
+            "twoColor": 1,
+            "fourColor": 3
+          }
+        ]
+      },
+      "dataSha256": "10b2ce5937abb4cfd2236747532ac09423b20661b41cb5226731fbd3bc0af4b3"
+    }
+  ]
+}

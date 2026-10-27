@@ -1,0 +1,247 @@
+/* Evgeny-/water-sort UI styles, reused under author permission confirmed by project owner. */
+:root {
+  color-scheme: dark;
+  --ink: #060a18;
+  --ground: #0c1430;
+  --panel: rgba(22, 32, 68, 0.78);
+  --panel-solid: #16214a;
+  --line: rgba(168, 196, 255, 0.16);
+  --line-strong: rgba(190, 212, 255, 0.34);
+  --text: #f2f6ff;
+  --muted: #a1afcf;
+  --faint: #6b7aa0;
+  --gold: #ffd23f;
+  --gold-deep: #e8a100;
+  --hue: 222;
+  --display: "Fredoka", "Baloo 2", ui-rounded, "SF Pro Rounded", system-ui, sans-serif;
+  --body: "Nunito", ui-rounded, system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+
+/* ─── backdrop: studio light behind the bottles ───────────────────────── */
+
+.backdrop {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(90% 55% at 50% 38%, hsl(var(--hue) 62% 30% / 0.95) 0%, transparent 70%),
+    radial-gradient(60% 40% at 12% 90%, hsl(calc(var(--hue) + 50) 70% 35% / 0.4) 0%, transparent 70%),
+    radial-gradient(50% 35% at 92% 8%, hsl(calc(var(--hue) - 40) 70% 45% / 0.3) 0%, transparent 70%),
+    linear-gradient(180deg, var(--ground), var(--ink));
+  transition: background 0.6s ease;
+}
+
+.backdrop {
+  overflow: hidden;
+}
+.backdrop::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: calc(100% + 240px);
+  background-image: radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.08) 0 2px, transparent 3px),
+    radial-gradient(circle at 70% 60%, rgba(255, 255, 255, 0.06) 0 3px, transparent 4px),
+    radial-gradient(circle at 40% 80%, rgba(255, 255, 255, 0.05) 0 2px, transparent 3px);
+  /* one tile height so the loop is seamless */
+  background-size: 180px 240px, 260px 240px, 150px 240px;
+  will-change: transform;
+  animation: drift 40s linear infinite;
+}
+
+@keyframes drift {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(0, -240px, 0);
+  }
+}
+
+/* ─── game buttons: chunky, glossy, press down ────────────────────────── */
+
+.gbtn {
+  --top: #6fd3ff;
+  --bot: #2a8fe0;
+  --edge: #16599c;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: 0;
+  border-radius: 18px;
+  padding: 11px 16px 12px;
+  color: #fff;
+  font: 600 16px/1 var(--display);
+  letter-spacing: 0.01em;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.22) 0%, rgba(255, 255, 255, 0.06) 48%, rgba(255, 255, 255, 0) 52%),
+    linear-gradient(180deg, var(--top), var(--bot));
+  box-shadow:
+    0 5px 0 var(--edge),
+    0 10px 18px rgba(0, 0, 0, 0.35),
+    inset 0 1.5px 0 rgba(255, 255, 255, 0.5),
+    inset 0 -3px 0 rgba(0, 0, 0, 0.12);
+  text-shadow: 0 1.5px 0 rgba(0, 0, 0, 0.28);
+  transition: transform 0.08s ease, box-shadow 0.08s ease, filter 0.15s;
+  touch-action: manipulation;
+}
+
+.gbtn svg {
+  width: 22px;
+  height: 22px;
+  flex: none;
+  filter: drop-shadow(0 1.5px 0 rgba(0, 0, 0, 0.25));
+}
+
+.gbtn:active {
+  transform: translateY(4px);
+  box-shadow:
+    0 1px 0 var(--edge),
+    0 4px 8px rgba(0, 0, 0, 0.3),
+    inset 0 2px 0 rgba(255, 255, 255, 0.4),
+    inset 0 -2px 0 rgba(0, 0, 0, 0.12);
+}
+
+.gbtn:disabled {
+  filter: grayscale(0.85) brightness(0.7);
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+.gbtn.green {
+  --top: #86f58f;
+  --bot: #22b44a;
+  --edge: #127a33;
+}
+.gbtn.blue {
+  --top: #70d4ff;
+  --bot: #2585e6;
+  --edge: #164f9c;
+}
+.gbtn.orange {
+  --top: #ffc862;
+  --bot: #ff841c;
+  --edge: #b85607;
+}
+.gbtn.purple {
+  --top: #cfa9ff;
+  --bot: #8750ff;
+  --edge: #542bb8;
+}
+.gbtn.glass {
+  --top: rgba(255, 255, 255, 0.2);
+  --bot: rgba(255, 255, 255, 0.07);
+  --edge: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.gbtn.big {
+  width: 100%;
+  font-size: 21px;
+  padding: 16px 20px 17px;
+  border-radius: 22px;
+}
+.gbtn.big svg {
+  width: 26px;
+  height: 26px;
+}
+.gbtn.big.fit {
+  font-size: 18px;
+  white-space: nowrap;
+}
+
+.gbtn.round {
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  border-radius: 16px;
+}
+.gbtn.round svg {
+  width: 24px;
+  height: 24px;
+}
+.gbtn.round.sm {
+  width: 44px;
+  height: 44px;
+}
+
+.gbtn.big:not(:disabled)::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: rgba(255, 255, 255, 0.1);
+  opacity: 0;
+  will-change: opacity;
+  animation: breathe 2.4s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes breathe {
+  50% {
+    opacity: 1;
+  }
+}
+
+
+.plate {
+  justify-self: center;
+  display: grid;
+  justify-items: center;
+  gap: 6px;
+  margin-top: 2px;
+}
+.plate strong {
+  font: 600 23px/1 var(--display);
+  padding: 9px 20px 10px;
+  border-radius: 16px;
+  background: linear-gradient(180deg, hsl(var(--hue) 55% 36%), hsl(var(--hue) 60% 22%));
+  box-shadow: 0 4px 0 hsl(var(--hue) 60% 12%), 0 8px 16px rgba(0, 0, 0, 0.35), inset 0 2px 0 rgba(255, 255, 255, 0.22);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.35);
+  white-space: nowrap;
+}
+.moves {
+  display: grid;
+  justify-items: center;
+  gap: 3px;
+  min-width: 70px;
+  padding: 7px 10px 6px;
+  border-radius: 16px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.16), rgba(255, 255, 255, 0.05));
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  font-variant-numeric: tabular-nums;
+}
+.moves b {
+  font: 600 24px/1 var(--display);
+  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.3);
+}
+.moves > span:not(.meter) {
+  font: 600 10.5px/1 var(--display);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.meter {
+  display: flex;
+  gap: 1px;
+}
+.meter i {
+  width: 15px;
+  height: 15px;
+  color: rgba(0, 0, 0, 0.45);
+  transition: color 0.3s;
+}
+.meter i.on {
+  color: var(--gold);
+}
+

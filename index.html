@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#060a18" />
+    <title>瓶子堆整理大师</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+    <script>
+      // Vite's production build inlines the module, so this launcher only runs
+      // when the unbuilt source entry is double-clicked from the filesystem.
+      if (
+        location.protocol === "file:" &&
+        document.querySelector('script[src="/src/main.js"]')
+      ) {
+        document.getElementById("app").innerHTML =
+          '<p style="font:16px sans-serif;padding:30px">正在打开离线版本… 若未构建，请先运行 npm run build。</p>';
+        location.replace(new URL("./dist/index.html", location.href));
+      }
+    </script>
+  </body>
+</html>

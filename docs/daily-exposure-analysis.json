@@ -1,0 +1,1725 @@
+{
+  "scope": "Geometry-only local digging; not legal liquid playthroughs or win-rate estimates",
+  "samples": [
+    {
+      "strategy": "right-first",
+      "bands": [
+        {
+          "meanColors": 2.7,
+          "meanChoices": 11.45
+        },
+        {
+          "meanColors": 2.9,
+          "meanChoices": 7.075
+        },
+        {
+          "meanColors": 2.825,
+          "meanChoices": 5.225
+        }
+      ],
+      "maxSimultaneousWaveSpread": 10,
+      "trace": [
+        {
+          "id": 110,
+          "choices": 18,
+          "colors": 2,
+          "wave": 0,
+          "exposedWaveSpread": 0
+        },
+        {
+          "id": 100,
+          "choices": 18,
+          "colors": 4,
+          "wave": 1,
+          "exposedWaveSpread": 1
+        },
+        {
+          "id": 90,
+          "choices": 18,
+          "colors": 3,
+          "wave": 2,
+          "exposedWaveSpread": 2
+        },
+        {
+          "id": 119,
+          "choices": 17,
+          "colors": 2,
+          "wave": 0,
+          "exposedWaveSpread": 0
+        },
+        {
+          "id": 101,
+          "choices": 16,
+          "colors": 3,
+          "wave": 0,
+          "exposedWaveSpread": 0
+        },
+        {
+          "id": 91,
+          "choices": 16,
+          "colors": 2,
+          "wave": 1,
+          "exposedWaveSpread": 1
+        },
+        {
+          "id": 111,
+          "choices": 15,
+          "colors": 2,
+          "wave": 0,
+          "exposedWaveSpread": 0
+        },
+        {
+          "id": 45,
+          "choices": 15,
+          "colors": 2,
+          "wave": 1,
+          "exposedWaveSpread": 1
+        },
+        {
+          "id": 16,
+          "choices": 15,
+          "colors": 2,
+          "wave": 2,
+          "exposedWaveSpread": 2
+        },
+        {
+          "id": 88,
+          "choices": 14,
+          "colors": 2,
+          "wave": 0,
+          "exposedWaveSpread": 0
+        },
+        {
+          "id": 92,
+          "choices": 14,
+          "colors": 2,
+          "wave": 0,
+          "exposedWaveSpread": 1
+        },
+        {
+          "id": 85,
+          "choices": 13,
+          "colors": 3,
+          "wave": 1,
+          "exposedWaveSpread": 1
+        },
+        {
+          "id": 102,
+          "choices": 12,
+          "colors": 2,
+          "wave": 0,
+          "exposedWaveSpread": 0
+        },
+        {
+          "id": 74,
+          "choices": 11,
+          "colors": 2,
+          "wave": 0,
+          "exposedWaveSpread": 0
+        },
+        {
+          "id": 56,
+          "choices": 11,
+          "colors": 3,
+          "wave": 1,
+          "exposedWaveSpread": 1
+        },
+        {
+          "id": 37,
+          "choices": 11,
+          "colors": 3,
+          "wave": 2,
+          "exposedWaveSpread": 2
+        },
+        {
+          "id": 109,
+          "choices": 11,
+          "colors": 2,
+          "wave": 3,
+          "exposedWaveSpread": 3
+        },
+        {
+          "id": 99,
+          "choices": 11,
+          "colors": 2,
+          "wave": 4,
+          "exposedWaveSpread": 4
+        },
+        {
+          "id": 86,
+          "choices": 10,
+          "colors": 3,
+          "wave": 0,
+          "exposedWaveSpread": 0
+        },
+        {
+          "id": 83,
+          "choices": 10,
+          "colors": 2,
+          "wave": 1,
+          "exposedWaveSpread": 1
+        },
+        {
+          "id": 76,
+          "choices": 11,
+          "colors": 2,
+          "wave": 2,
+          "exposedWaveSpread": 2
+        },
+        {
+          "id": 71,
+          "choices": 11,
+          "colors": 3,
+          "wave": 3,
+          "exposedWaveSpread": 3
+        },
+        {
+          "id": 61,
+          "choices": 11,
+          "colors": 3,
+          "wave": 4,
+          "exposedWaveSpread": 4
+        },
+        {
+          "id": 42,
+          "choices": 11,
+          "colors": 3,
+          "wave": 5,
+          "exposedWaveSpread": 5
+        },
+        {
+          "id": 21,
+          "choices": 11,
+          "colors": 3,
+          "wave": 6,
+          "exposedWaveSpread": 6
+        },
+        {
+          "id": 80,
+          "choices": 10,
+          "colors": 2,
+          "wave": 2,
+          "exposedWaveSpread": 2
+        },
+        {
+          "id": 73,
+          "choices": 10,
+          "colors": 4,
+          "wave": 3,
+          "exposedWaveSpread": 3
+        },
+        {
+          "id": 68,
+          "choices": 10,
+          "colors": 3,
+          "wave": 4,
+          "exposedWaveSpread": 4
+        },
+        {
+          "id": 53,
+          "choices": 10,
+          "colors": 3,
+          "wave": 5,
+          "exposedWaveSpread": 5
+        },
+        {
+          "id": 34,
+          "choices": 10,
+          "colors": 3,
+          "wave": 6,
+          "exposedWaveSpread": 6
+        },
+        {
+          "id": 112,
+          "choices": 9,
+          "colors": 4,
+          "wave": 0,
+          "exposedWaveSpread": 0
+        },
+        {
+          "id": 59,
+          "choices": 9,
+          "colors": 3,
+          "wave": 0,
+          "exposedWaveSpread": 1
+        },
+        {
+          "id": 40,
+          "choices": 9,
+          "colors": 2,
+          "wave": 1,
+          "exposedWaveSpread": 1
+        },
+        {
+          "id": 19,
+          "choices": 8,
+          "colors": 3,
+          "wave": 1,
+          "exposedWaveSpread": 1
+        },
+        {
+          "id": 89,
+          "choices": 7,
+          "colors": 2,
+          "wave": 0,
+          "exposedWaveSpread": 0
+        },
+        {
+          "id": 84,
+          "choices": 7,
+          "colors": 3,
+          "wave": 1,
+          "exposedWaveSpread": 1
+        },
+        {
+          "id": 81,
+          "choices": 7,
+          "colors": 4,
+          "wave": 1,
+          "exposedWaveSpread": 1
+        },
+        {
+          "id": 66,
+          "choices": 7,
+          "colors": 3,
+          "wave": 4,
+          "exposedWaveSpread": 4
+        },
+        {
+          "id": 51,
+          "choices": 7,
+          "colors": 3,
+          "wave": 5,
+          "exposedWaveSpread": 5
+        },
+        {
+          "id": 32,
+          "choices": 7,
+          "colors": 4,
+          "wave": 6,
+          "exposedWaveSpread": 6
+        },
+        {
+          "id": 8,
+          "choices": 8,
+          "colors": 2,
+          "wave": 7,
+          "exposedWaveSpread": 7
+        },
+        {
+          "id": 13,
+          "choices": 9,
+          "colors": 2,
+          "wave": 8,
+          "exposedWaveSpread": 8
+        },
+        {
+          "id": 48,
+          "choices": 8,
+          "colors": 3,
+          "wave": 6,
+          "exposedWaveSpread": 7
+        },
+        {
+          "id": 29,
+          "choices": 8,
+          "colors": 4,
+          "wave": 7,
+          "exposedWaveSpread": 7
+        },
+        {
+          "id": 11,
+          "choices": 7,
+          "colors": 3,
+          "wave": 7,
+          "exposedWaveSpread": 7
+        },
+        {
+          "id": 3,
+          "choices": 7,
+          "colors": 4,
+          "wave": 8,
+          "exposedWaveSpread": 8
+        },
+        {
+          "id": 87,
+          "choices": 6,
+          "colors": 2,
+          "wave": 0,
+          "exposedWaveSpread": 0
+        },
+        {
+          "id": 82,
+          "choices": 7,
+          "colors": 2,
+          "wave": 2,
+          "exposedWaveSpread": 2
+        },
+        {
+          "id": 78,
+          "choices": 8,
+          "colors": 2,
+          "wave": 3,
+          "exposedWaveSpread": 3
+        },
+        {
+          "id": 63,
+          "choices": 8,
+          "colors": 2,
+          "wave": 4,
+          "exposedWaveSpread": 4
+        },
+        {
+          "id": 79,
+          "choices": 7,
+          "colors": 3,
+          "wave": 3,
+          "exposedWaveSpread": 3
+        },
+        {
+          "id": 77,
+          "choices": 6,
+          "colors": 3,
+          "wave": 0,
+          "exposedWaveSpread": 2
+        },
+        {
+          "id": 69,
+          "choices": 7,
+          "colors": 2,
+          "wave": 1,
+          "exposedWaveSpread": 2
+        },
+        {
+          "id": 54,
+          "choices": 7,
+          "colors": 2,
+          "wave": 2,
+          "exposedWaveSpread": 2
+        },
+        {
+          "id": 27,
+          "choices": 8,
+          "colors": 4,
+          "wave": 8,
+          "exposedWaveSpread": 8
+        },
+        {
+          "id": 24,
+          "choices": 8,
+          "colors": 4,
+          "wave": 9,
+          "exposedWaveSpread": 9
+        },
+        {
+          "id": 35,
+          "choices": 7,
+          "colors": 4,
+          "wave": 3,
+          "exposedWaveSpread": 3
+        },
+        {
+          "id": 14,
+          "choices": 7,
+          "colors": 2,
+          "wave": 4,
+          "exposedWaveSpread": 4
+        },
+        {
+          "id": 6,
+          "choices": 7,
+          "colors": 3,
+          "wave": 8,
+          "exposedWaveSpread": 8
+        },
+        {
+          "id": 75,
+          "choices": 6,
+          "colors": 2,
+          "wave": 2,
+          "exposedWaveSpread": 2
+        },
+        {
+          "id": 70,
+          "choices": 6,
+          "colors": 3,
+          "wave": 4,
+          "exposedWaveSpread": 4
+        },
+        {
+          "id": 72,
+          "choices": 5,
+          "colors": 2,
+          "wave": 1,
+          "exposedWaveSpread": 1
+        },
+        {
+          "id": 67,
+          "choices": 5,
+          "colors": 3,
+          "wave": 4,
+          "exposedWaveSpread": 4
+        },
+        {
+          "id": 65,
+          "choices": 7,
+          "colors": 4,
+          "wave": 5,
+          "exposedWaveSpread": 5
+        },
+        {
+          "id": 58,
+          "choices": 8,
+          "colors": 2,
+          "wave": 6,
+          "exposedWaveSpread": 6
+        },
+        {
+          "id": 118,
+          "choices": 9,
+          "colors": 4,
+          "wave": 7,
+          "exposedWaveSpread": 7
+        },
+        {
+          "id": 39,
+          "choices": 8,
+          "colors": 2,
+          "wave": 7,
+          "exposedWaveSpread": 7
+        },
+        {
+          "id": 18,
+          "choices": 9,
+          "colors": 3,
+          "wave": 9,
+          "exposedWaveSpread": 9
+        },
+        {
+          "id": 108,
+          "choices": 8,
+          "colors": 2,
+          "wave": 8,
+          "exposedWaveSpread": 8
+        },
+        {
+          "id": 98,
+          "choices": 8,
+          "colors": 2,
+          "wave": 9,
+          "exposedWaveSpread": 9
+        },
+        {
+          "id": 50,
+          "choices": 7,
+          "colors": 4,
+          "wave": 6,
+          "exposedWaveSpread": 6
+        },
+        {
+          "id": 64,
+          "choices": 7,
+          "colors": 3,
+          "wave": 2,
+          "exposedWaveSpread": 6
+        },
+        {
+          "id": 46,
+          "choices": 7,
+          "colors": 4,
+          "wave": 7,
+          "exposedWaveSpread": 7
+        },
+        {
+          "id": 26,
+          "choices": 7,
+          "colors": 3,
+          "wave": 8,
+          "exposedWaveSpread": 8
+        },
+        {
+          "id": 5,
+          "choices": 8,
+          "colors": 3,
+          "wave": 9,
+          "exposedWaveSpread": 10
+        },
+        {
+          "id": 0,
+          "choices": 7,
+          "colors": 4,
+          "wave": 10,
+          "exposedWaveSpread": 10
+        },
+        {
+          "id": 55,
+          "choices": 6,
+          "colors": 3,
+          "wave": 6,
+          "exposedWaveSpread": 6
+        },
+        {
+          "id": 44,
+          "choices": 5,
+          "colors": 4,
+          "wave": 7,
+          "exposedWaveSpread": 7
+        },
+        {
+          "id": 117,
+          "choices": 5,
+          "colors": 2,
+          "wave": 8,
+          "exposedWaveSpread": 8
+        },
+        {
+          "id": 107,
+          "choices": 5,
+          "colors": 4,
+          "wave": 9,
+          "exposedWaveSpread": 9
+        },
+        {
+          "id": 97,
+          "choices": 5,
+          "colors": 3,
+          "wave": 10,
+          "exposedWaveSpread": 10
+        },
+        {
+          "id": 113,
+          "choices": 4,
+          "colors": 2,
+          "wave": 0,
+          "exposedWaveSpread": 0
+        },
+        {
+          "id": 62,
+          "choices": 5,
+          "colors": 2,
+          "wave": 1,
+          "exposedWaveSpread": 2
+        },
+        {
+          "id": 57,
+          "choices": 5,
+          "colors": 4,
+          "wave": 2,
+          "exposedWaveSpread": 2
+        },
+        {
+          "id": 49,
+          "choices": 6,
+          "colors": 2,
+          "wave": 3,
+          "exposedWaveSpread": 5
+        },
+        {
+          "id": 30,
+          "choices": 7,
+          "colors": 4,
+          "wave": 4,
+          "exposedWaveSpread": 5
+        },
+        {
+          "id": 52,
+          "choices": 7,
+          "colors": 2,
+          "wave": 5,
+          "exposedWaveSpread": 5
+        },
+        {
+          "id": 47,
+          "choices": 8,
+          "colors": 2,
+          "wave": 6,
+          "exposedWaveSpread": 6
+        },
+        {
+          "id": 31,
+          "choices": 9,
+          "colors": 4,
+          "wave": 8,
+          "exposedWaveSpread": 8
+        },
+        {
+          "id": 10,
+          "choices": 9,
+          "colors": 2,
+          "wave": 9,
+          "exposedWaveSpread": 9
+        },
+        {
+          "id": 23,
+          "choices": 9,
+          "colors": 3,
+          "wave": 9,
+          "exposedWaveSpread": 9
+        },
+        {
+          "id": 25,
+          "choices": 8,
+          "colors": 3,
+          "wave": 8,
+          "exposedWaveSpread": 8
+        },
+        {
+          "id": 60,
+          "choices": 7,
+          "colors": 2,
+          "wave": 5,
+          "exposedWaveSpread": 5
+        },
+        {
+          "id": 41,
+          "choices": 7,
+          "colors": 3,
+          "wave": 7,
+          "exposedWaveSpread": 7
+        },
+        {
+          "id": 36,
+          "choices": 9,
+          "colors": 4,
+          "wave": 8,
+          "exposedWaveSpread": 8
+        },
+        {
+          "id": 9,
+          "choices": 8,
+          "colors": 3,
+          "wave": 5,
+          "exposedWaveSpread": 8
+        },
+        {
+          "id": 1,
+          "choices": 9,
+          "colors": 4,
+          "wave": 9,
+          "exposedWaveSpread": 9
+        },
+        {
+          "id": 4,
+          "choices": 8,
+          "colors": 3,
+          "wave": 9,
+          "exposedWaveSpread": 9
+        },
+        {
+          "id": 103,
+          "choices": 7,
+          "colors": 2,
+          "wave": 0,
+          "exposedWaveSpread": 8
+        },
+        {
+          "id": 93,
+          "choices": 7,
+          "colors": 2,
+          "wave": 1,
+          "exposedWaveSpread": 8
+        },
+        {
+          "id": 20,
+          "choices": 6,
+          "colors": 4,
+          "wave": 8,
+          "exposedWaveSpread": 8
+        },
+        {
+          "id": 43,
+          "choices": 5,
+          "colors": 2,
+          "wave": 2,
+          "exposedWaveSpread": 8
+        },
+        {
+          "id": 38,
+          "choices": 4,
+          "colors": 3,
+          "wave": 4,
+          "exposedWaveSpread": 8
+        },
+        {
+          "id": 33,
+          "choices": 4,
+          "colors": 2,
+          "wave": 6,
+          "exposedWaveSpread": 8
+        },
+        {
+          "id": 28,
+          "choices": 5,
+          "colors": 2,
+          "wave": 7,
+          "exposedWaveSpread": 9
+        },
+        {
+          "id": 2,
+          "choices": 6,
+          "colors": 3,
+          "wave": 9,
+          "exposedWaveSpread": 9
+        },
+        {
+          "id": 15,
+          "choices": 5,
+          "colors": 4,
+          "wave": 9,
+          "exposedWaveSpread": 9
+        },
+        {
+          "id": 12,
+          "choices": 4,
+          "colors": 4,
+          "wave": 9,
+          "exposedWaveSpread": 9
+        },
+        {
+          "id": 7,
+          "choices": 4,
+          "colors": 3,
+          "wave": 10,
+          "exposedWaveSpread": 10
+        },
+        {
+          "id": 116,
+          "choices": 3,
+          "colors": 3,
+          "wave": 8,
+          "exposedWaveSpread": 8
+        },
+        {
+          "id": 106,
+          "choices": 3,
+          "colors": 2,
+          "wave": 9,
+          "exposedWaveSpread": 9
+        },
+        {
+          "id": 114,
+          "choices": 2,
+          "colors": 2,
+          "wave": 0,
+          "exposedWaveSpread": 0
+        },
+        {
+          "id": 17,
+          "choices": 3,
+          "colors": 4,
+          "wave": 6,
+          "exposedWaveSpread": 6
+        },
+        {
+          "id": 104,
+          "choices": 2,
+          "colors": 2,
+          "wave": 1,
+          "exposedWaveSpread": 1
+        },
+        {
+          "id": 94,
+          "choices": 2,
+          "colors": 3,
+          "wave": 2,
+          "exposedWaveSpread": 2
+        },
+        {
+          "id": 22,
+          "choices": 2,
+          "colors": 2,
+          "wave": 1,
+          "exposedWaveSpread": 1
+        },
+        {
+          "id": 115,
+          "choices": 1,
+          "colors": 2,
+          "wave": 0,
+          "exposedWaveSpread": 0
+        },
+        {
+          "id": 96,
+          "choices": 2,
+          "colors": 4,
+          "wave": 10,
+          "exposedWaveSpread": 9
+        },
+        {
+          "id": 105,
+          "choices": 1,
+          "colors": 3,
+          "wave": 1,
+          "exposedWaveSpread": 0
+        },
+        {
+          "id": 95,
+          "choices": 1,
+          "colors": 3,
+          "wave": 2,
+          "exposedWaveSpread": 0
+        }
+      ]
+    },
+    {
+      "strategy": "left-first",
+      "bands": [
+        {
+          "meanColors": 2.625,
+          "meanChoices": 12.4
+        },
+        {
+          "meanColors": 2.95,
+          "meanChoices": 9.1
+        },
+        {
+          "meanColors": 2.85,
+          "meanChoices": 5.675
+        }
+      ],
+      "maxSimultaneousWaveSpread": 10,
+      "trace": [
+        {
+          "id": 115,
+          "choices": 18,
+          "colors": 2,
+          "wave": 0,
+          "exposedWaveSpread": 0
+        },
+        {
+          "id": 114,
+          "choices": 17,
+          "colors": 2,
+          "wave": 0,
+          "exposedWaveSpread": 0
+        },
+        {
+          "id": 105,
+          "choices": 18,
+          "colors": 3,
+          "wave": 1,
+          "exposedWaveSpread": 1
+        },
+        {
+          "id": 95,
+          "choices": 18,
+          "colors": 3,
+          "wave": 2,
+          "exposedWaveSpread": 2
+        },
+        {
+          "id": 104,
+          "choices": 17,
+          "colors": 2,
+          "wave": 1,
+          "exposedWaveSpread": 1
+        },
+        {
+          "id": 94,
+          "choices": 17,
+          "colors": 3,
+          "wave": 2,
+          "exposedWaveSpread": 2
+        },
+        {
+          "id": 103,
+          "choices": 16,
+          "colors": 2,
+          "wave": 0,
+          "exposedWaveSpread": 0
+        },
+        {
+          "id": 113,
+          "choices": 16,
+          "colors": 2,
+          "wave": 0,
+          "exposedWaveSpread": 1
+        },
+        {
+          "id": 22,
+          "choices": 16,
+          "colors": 2,
+          "wave": 1,
+          "exposedWaveSpread": 1
+        },
+        {
+          "id": 77,
+          "choices": 15,
+          "colors": 3,
+          "wave": 0,
+          "exposedWaveSpread": 1
+        },
+        {
+          "id": 62,
+          "choices": 15,
+          "colors": 2,
+          "wave": 1,
+          "exposedWaveSpread": 1
+        },
+        {
+          "id": 43,
+          "choices": 16,
+          "colors": 2,
+          "wave": 2,
+          "exposedWaveSpread": 2
+        },
+        {
+          "id": 57,
+          "choices": 15,
+          "colors": 4,
+          "wave": 2,
+          "exposedWaveSpread": 2
+        },
+        {
+          "id": 93,
+          "choices": 14,
+          "colors": 2,
+          "wave": 1,
+          "exposedWaveSpread": 1
+        },
+        {
+          "id": 87,
+          "choices": 13,
+          "colors": 2,
+          "wave": 0,
+          "exposedWaveSpread": 0
+        },
+        {
+          "id": 89,
+          "choices": 12,
+          "colors": 2,
+          "wave": 0,
+          "exposedWaveSpread": 0
+        },
+        {
+          "id": 72,
+          "choices": 13,
+          "colors": 2,
+          "wave": 1,
+          "exposedWaveSpread": 1
+        },
+        {
+          "id": 84,
+          "choices": 12,
+          "colors": 3,
+          "wave": 1,
+          "exposedWaveSpread": 1
+        },
+        {
+          "id": 75,
+          "choices": 12,
+          "colors": 2,
+          "wave": 2,
+          "exposedWaveSpread": 2
+        },
+        {
+          "id": 59,
+          "choices": 11,
+          "colors": 3,
+          "wave": 0,
+          "exposedWaveSpread": 0
+        },
+        {
+          "id": 40,
+          "choices": 11,
+          "colors": 2,
+          "wave": 1,
+          "exposedWaveSpread": 1
+        },
+        {
+          "id": 112,
+          "choices": 9,
+          "colors": 4,
+          "wave": 0,
+          "exposedWaveSpread": 0
+        },
+        {
+          "id": 19,
+          "choices": 10,
+          "colors": 3,
+          "wave": 1,
+          "exposedWaveSpread": 1
+        },
+        {
+          "id": 86,
+          "choices": 9,
+          "colors": 3,
+          "wave": 0,
+          "exposedWaveSpread": 0
+        },
+        {
+          "id": 81,
+          "choices": 10,
+          "colors": 4,
+          "wave": 1,
+          "exposedWaveSpread": 1
+        },
+        {
+          "id": 74,
+          "choices": 9,
+          "colors": 2,
+          "wave": 0,
+          "exposedWaveSpread": 1
+        },
+        {
+          "id": 69,
+          "choices": 10,
+          "colors": 2,
+          "wave": 1,
+          "exposedWaveSpread": 1
+        },
+        {
+          "id": 49,
+          "choices": 12,
+          "colors": 2,
+          "wave": 3,
+          "exposedWaveSpread": 3
+        },
+        {
+          "id": 38,
+          "choices": 11,
+          "colors": 3,
+          "wave": 4,
+          "exposedWaveSpread": 4
+        },
+        {
+          "id": 54,
+          "choices": 10,
+          "colors": 2,
+          "wave": 2,
+          "exposedWaveSpread": 2
+        },
+        {
+          "id": 35,
+          "choices": 10,
+          "colors": 4,
+          "wave": 3,
+          "exposedWaveSpread": 3
+        },
+        {
+          "id": 30,
+          "choices": 11,
+          "colors": 4,
+          "wave": 4,
+          "exposedWaveSpread": 4
+        },
+        {
+          "id": 9,
+          "choices": 11,
+          "colors": 3,
+          "wave": 5,
+          "exposedWaveSpread": 5
+        },
+        {
+          "id": 17,
+          "choices": 11,
+          "colors": 4,
+          "wave": 6,
+          "exposedWaveSpread": 6
+        },
+        {
+          "id": 14,
+          "choices": 10,
+          "colors": 2,
+          "wave": 4,
+          "exposedWaveSpread": 4
+        },
+        {
+          "id": 102,
+          "choices": 9,
+          "colors": 2,
+          "wave": 0,
+          "exposedWaveSpread": 1
+        },
+        {
+          "id": 83,
+          "choices": 8,
+          "colors": 2,
+          "wave": 1,
+          "exposedWaveSpread": 1
+        },
+        {
+          "id": 71,
+          "choices": 8,
+          "colors": 3,
+          "wave": 3,
+          "exposedWaveSpread": 3
+        },
+        {
+          "id": 66,
+          "choices": 8,
+          "colors": 3,
+          "wave": 4,
+          "exposedWaveSpread": 4
+        },
+        {
+          "id": 51,
+          "choices": 8,
+          "colors": 3,
+          "wave": 5,
+          "exposedWaveSpread": 5
+        },
+        {
+          "id": 92,
+          "choices": 7,
+          "colors": 2,
+          "wave": 0,
+          "exposedWaveSpread": 1
+        },
+        {
+          "id": 88,
+          "choices": 6,
+          "colors": 2,
+          "wave": 0,
+          "exposedWaveSpread": 1
+        },
+        {
+          "id": 80,
+          "choices": 8,
+          "colors": 2,
+          "wave": 2,
+          "exposedWaveSpread": 2
+        },
+        {
+          "id": 85,
+          "choices": 7,
+          "colors": 3,
+          "wave": 1,
+          "exposedWaveSpread": 2
+        },
+        {
+          "id": 82,
+          "choices": 8,
+          "colors": 2,
+          "wave": 2,
+          "exposedWaveSpread": 3
+        },
+        {
+          "id": 79,
+          "choices": 9,
+          "colors": 3,
+          "wave": 3,
+          "exposedWaveSpread": 3
+        },
+        {
+          "id": 67,
+          "choices": 10,
+          "colors": 3,
+          "wave": 4,
+          "exposedWaveSpread": 4
+        },
+        {
+          "id": 64,
+          "choices": 9,
+          "colors": 3,
+          "wave": 2,
+          "exposedWaveSpread": 3
+        },
+        {
+          "id": 52,
+          "choices": 11,
+          "colors": 2,
+          "wave": 5,
+          "exposedWaveSpread": 7
+        },
+        {
+          "id": 33,
+          "choices": 12,
+          "colors": 2,
+          "wave": 6,
+          "exposedWaveSpread": 7
+        },
+        {
+          "id": 70,
+          "choices": 11,
+          "colors": 3,
+          "wave": 4,
+          "exposedWaveSpread": 7
+        },
+        {
+          "id": 60,
+          "choices": 11,
+          "colors": 2,
+          "wave": 5,
+          "exposedWaveSpread": 7
+        },
+        {
+          "id": 55,
+          "choices": 11,
+          "colors": 3,
+          "wave": 6,
+          "exposedWaveSpread": 7
+        },
+        {
+          "id": 41,
+          "choices": 11,
+          "colors": 3,
+          "wave": 7,
+          "exposedWaveSpread": 7
+        },
+        {
+          "id": 116,
+          "choices": 12,
+          "colors": 3,
+          "wave": 8,
+          "exposedWaveSpread": 8
+        },
+        {
+          "id": 106,
+          "choices": 12,
+          "colors": 2,
+          "wave": 9,
+          "exposedWaveSpread": 9
+        },
+        {
+          "id": 96,
+          "choices": 12,
+          "colors": 4,
+          "wave": 10,
+          "exposedWaveSpread": 10
+        },
+        {
+          "id": 20,
+          "choices": 11,
+          "colors": 4,
+          "wave": 8,
+          "exposedWaveSpread": 8
+        },
+        {
+          "id": 12,
+          "choices": 11,
+          "colors": 4,
+          "wave": 9,
+          "exposedWaveSpread": 9
+        },
+        {
+          "id": 78,
+          "choices": 10,
+          "colors": 2,
+          "wave": 3,
+          "exposedWaveSpread": 7
+        },
+        {
+          "id": 63,
+          "choices": 10,
+          "colors": 2,
+          "wave": 4,
+          "exposedWaveSpread": 7
+        },
+        {
+          "id": 46,
+          "choices": 9,
+          "colors": 4,
+          "wave": 7,
+          "exposedWaveSpread": 7
+        },
+        {
+          "id": 27,
+          "choices": 9,
+          "colors": 4,
+          "wave": 8,
+          "exposedWaveSpread": 8
+        },
+        {
+          "id": 1,
+          "choices": 10,
+          "colors": 4,
+          "wave": 9,
+          "exposedWaveSpread": 9
+        },
+        {
+          "id": 6,
+          "choices": 9,
+          "colors": 3,
+          "wave": 8,
+          "exposedWaveSpread": 8
+        },
+        {
+          "id": 65,
+          "choices": 8,
+          "colors": 4,
+          "wave": 5,
+          "exposedWaveSpread": 5
+        },
+        {
+          "id": 47,
+          "choices": 9,
+          "colors": 2,
+          "wave": 6,
+          "exposedWaveSpread": 6
+        },
+        {
+          "id": 28,
+          "choices": 10,
+          "colors": 2,
+          "wave": 7,
+          "exposedWaveSpread": 8
+        },
+        {
+          "id": 25,
+          "choices": 9,
+          "colors": 3,
+          "wave": 8,
+          "exposedWaveSpread": 8
+        },
+        {
+          "id": 4,
+          "choices": 9,
+          "colors": 3,
+          "wave": 9,
+          "exposedWaveSpread": 9
+        },
+        {
+          "id": 7,
+          "choices": 9,
+          "colors": 3,
+          "wave": 10,
+          "exposedWaveSpread": 10
+        },
+        {
+          "id": 50,
+          "choices": 8,
+          "colors": 4,
+          "wave": 6,
+          "exposedWaveSpread": 6
+        },
+        {
+          "id": 36,
+          "choices": 8,
+          "colors": 4,
+          "wave": 8,
+          "exposedWaveSpread": 8
+        },
+        {
+          "id": 15,
+          "choices": 8,
+          "colors": 4,
+          "wave": 9,
+          "exposedWaveSpread": 9
+        },
+        {
+          "id": 73,
+          "choices": 7,
+          "colors": 4,
+          "wave": 3,
+          "exposedWaveSpread": 3
+        },
+        {
+          "id": 117,
+          "choices": 7,
+          "colors": 2,
+          "wave": 8,
+          "exposedWaveSpread": 8
+        },
+        {
+          "id": 107,
+          "choices": 7,
+          "colors": 4,
+          "wave": 9,
+          "exposedWaveSpread": 9
+        },
+        {
+          "id": 97,
+          "choices": 7,
+          "colors": 3,
+          "wave": 10,
+          "exposedWaveSpread": 10
+        },
+        {
+          "id": 56,
+          "choices": 6,
+          "colors": 3,
+          "wave": 1,
+          "exposedWaveSpread": 2
+        },
+        {
+          "id": 76,
+          "choices": 6,
+          "colors": 2,
+          "wave": 2,
+          "exposedWaveSpread": 2
+        },
+        {
+          "id": 68,
+          "choices": 7,
+          "colors": 3,
+          "wave": 4,
+          "exposedWaveSpread": 4
+        },
+        {
+          "id": 58,
+          "choices": 7,
+          "colors": 2,
+          "wave": 6,
+          "exposedWaveSpread": 6
+        },
+        {
+          "id": 44,
+          "choices": 8,
+          "colors": 4,
+          "wave": 7,
+          "exposedWaveSpread": 7
+        },
+        {
+          "id": 37,
+          "choices": 7,
+          "colors": 3,
+          "wave": 2,
+          "exposedWaveSpread": 7
+        },
+        {
+          "id": 118,
+          "choices": 6,
+          "colors": 4,
+          "wave": 7,
+          "exposedWaveSpread": 7
+        },
+        {
+          "id": 61,
+          "choices": 5,
+          "colors": 3,
+          "wave": 4,
+          "exposedWaveSpread": 4
+        },
+        {
+          "id": 53,
+          "choices": 6,
+          "colors": 3,
+          "wave": 5,
+          "exposedWaveSpread": 5
+        },
+        {
+          "id": 48,
+          "choices": 8,
+          "colors": 3,
+          "wave": 6,
+          "exposedWaveSpread": 7
+        },
+        {
+          "id": 26,
+          "choices": 8,
+          "colors": 3,
+          "wave": 8,
+          "exposedWaveSpread": 8
+        },
+        {
+          "id": 39,
+          "choices": 7,
+          "colors": 2,
+          "wave": 7,
+          "exposedWaveSpread": 7
+        },
+        {
+          "id": 31,
+          "choices": 9,
+          "colors": 4,
+          "wave": 8,
+          "exposedWaveSpread": 9
+        },
+        {
+          "id": 2,
+          "choices": 10,
+          "colors": 3,
+          "wave": 9,
+          "exposedWaveSpread": 9
+        },
+        {
+          "id": 10,
+          "choices": 9,
+          "colors": 2,
+          "wave": 9,
+          "exposedWaveSpread": 9
+        },
+        {
+          "id": 23,
+          "choices": 8,
+          "colors": 3,
+          "wave": 9,
+          "exposedWaveSpread": 9
+        },
+        {
+          "id": 108,
+          "choices": 7,
+          "colors": 2,
+          "wave": 8,
+          "exposedWaveSpread": 8
+        },
+        {
+          "id": 98,
+          "choices": 7,
+          "colors": 2,
+          "wave": 9,
+          "exposedWaveSpread": 9
+        },
+        {
+          "id": 34,
+          "choices": 6,
+          "colors": 3,
+          "wave": 6,
+          "exposedWaveSpread": 6
+        },
+        {
+          "id": 18,
+          "choices": 6,
+          "colors": 3,
+          "wave": 9,
+          "exposedWaveSpread": 9
+        },
+        {
+          "id": 111,
+          "choices": 5,
+          "colors": 2,
+          "wave": 0,
+          "exposedWaveSpread": 5
+        },
+        {
+          "id": 45,
+          "choices": 5,
+          "colors": 2,
+          "wave": 1,
+          "exposedWaveSpread": 5
+        },
+        {
+          "id": 32,
+          "choices": 6,
+          "colors": 4,
+          "wave": 6,
+          "exposedWaveSpread": 6
+        },
+        {
+          "id": 11,
+          "choices": 8,
+          "colors": 3,
+          "wave": 7,
+          "exposedWaveSpread": 7
+        },
+        {
+          "id": 29,
+          "choices": 7,
+          "colors": 4,
+          "wave": 7,
+          "exposedWaveSpread": 7
+        },
+        {
+          "id": 24,
+          "choices": 7,
+          "colors": 4,
+          "wave": 9,
+          "exposedWaveSpread": 9
+        },
+        {
+          "id": 8,
+          "choices": 6,
+          "colors": 2,
+          "wave": 7,
+          "exposedWaveSpread": 7
+        },
+        {
+          "id": 3,
+          "choices": 7,
+          "colors": 4,
+          "wave": 8,
+          "exposedWaveSpread": 9
+        },
+        {
+          "id": 0,
+          "choices": 7,
+          "colors": 4,
+          "wave": 10,
+          "exposedWaveSpread": 10
+        },
+        {
+          "id": 5,
+          "choices": 6,
+          "colors": 3,
+          "wave": 9,
+          "exposedWaveSpread": 9
+        },
+        {
+          "id": 16,
+          "choices": 5,
+          "colors": 2,
+          "wave": 2,
+          "exposedWaveSpread": 5
+        },
+        {
+          "id": 42,
+          "choices": 4,
+          "colors": 3,
+          "wave": 5,
+          "exposedWaveSpread": 5
+        },
+        {
+          "id": 13,
+          "choices": 4,
+          "colors": 2,
+          "wave": 8,
+          "exposedWaveSpread": 8
+        },
+        {
+          "id": 101,
+          "choices": 3,
+          "colors": 3,
+          "wave": 0,
+          "exposedWaveSpread": 0
+        },
+        {
+          "id": 91,
+          "choices": 3,
+          "colors": 2,
+          "wave": 1,
+          "exposedWaveSpread": 1
+        },
+        {
+          "id": 119,
+          "choices": 2,
+          "colors": 2,
+          "wave": 0,
+          "exposedWaveSpread": 0
+        },
+        {
+          "id": 109,
+          "choices": 2,
+          "colors": 2,
+          "wave": 3,
+          "exposedWaveSpread": 3
+        },
+        {
+          "id": 110,
+          "choices": 2,
+          "colors": 2,
+          "wave": 0,
+          "exposedWaveSpread": 4
+        },
+        {
+          "id": 21,
+          "choices": 3,
+          "colors": 3,
+          "wave": 6,
+          "exposedWaveSpread": 5
+        },
+        {
+          "id": 99,
+          "choices": 2,
+          "colors": 2,
+          "wave": 4,
+          "exposedWaveSpread": 3
+        },
+        {
+          "id": 100,
+          "choices": 1,
+          "colors": 4,
+          "wave": 1,
+          "exposedWaveSpread": 0
+        },
+        {
+          "id": 90,
+          "choices": 1,
+          "colors": 3,
+          "wave": 2,
+          "exposedWaveSpread": 0
+        }
+      ]
+    }
+  ]
+}
